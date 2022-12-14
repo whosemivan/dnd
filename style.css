@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(64, 93, 55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board {
+    display: flex;
+}
+
+.column {
+    background-color: white;
+    width: 200px;
+    border: 1px dotted #ccc;
+    border-radius: 5px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.board-column-header {
+    user-select: none;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    cursor: move;
+}
+
+.board-item {
+    background-color: #efffde;
+    border: 1px solid #9ecda8;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: move;
+    margin-bottom: 0.5em;
+    width: 188px;
+    height: 35px;
+}
+
+.board-item-content {
+    pointer-events: none;
+    user-select: none;
+}
+
+.placeholder {
+    background-color: white;
+    margin-bottom: 0.5em;
+    width: 188px;
+    height: 35px;
+}
+
+.emptySectionHiddenLesson {
+    background: none;
+    border: none;
+    width: 188px;
+    height: 35px;
+}
+
+.placeholder-column {
+    background-color: white;
+    width: 200px;
+    border: none;
+    margin-right: 20px;
+    padding: 5px;
+}
